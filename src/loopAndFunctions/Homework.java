@@ -1,5 +1,10 @@
 package loopAndFunctions;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
 public class Homework {
   public static boolean isPrimeNumber(int number) {
     if (number <= 0 || number == 1) {
@@ -17,7 +22,7 @@ public class Homework {
     return true;
   }
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws FileNotFoundException {
     // Tìm ước chung lớn nhất của hai số tự nhiên
 //    Scanner scanner = new Scanner(System.in);
 //    int a = scanner.nextInt();
@@ -48,14 +53,23 @@ public class Homework {
 //    System.out.println(true);
 
     // In ra 50 số nguyên tố đầu tiên
-    int count = 0;
-    int number = 0;
-    while (count <= 50) {
-      if (isPrimeNumber(number)) {
-        System.out.print(number + " ");
-        count++;
-        number++;
-      } else number++;
-    }
+//    int count = 0;
+//    int number = 0;
+//    while (count <= 50) {
+//      if (isPrimeNumber(number)) {
+//        System.out.print(number + " ");
+//        count++;
+//        number++;
+//      } else number++;
+//    }
+//    Scanner input = new Scanner(new File("src/loopAndFunctions/text"));
+//    while(input.hasNext()) {
+//      System.out.println(input.next());
+//    }
+    PrintWriter output = new PrintWriter("src/loopAndFunctions/text");
+    output.println("abc");
+    output.println("123");
+    output.println("def");
+    output.close();
   }
 }
