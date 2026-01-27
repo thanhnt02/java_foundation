@@ -3,6 +3,8 @@ package OOP;
 public class Main {
   public static void main(String[] args) {
     Animal animal = new Animal("Dog", 3);
-    System.out.println(animal.name + animal.age);
+    Animal.count++;
+    Animal animal1 = new Animal("Dog1", 4);
+    Animal.count++;
   }
 }

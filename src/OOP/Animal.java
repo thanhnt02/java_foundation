@@ -5,6 +5,7 @@ class Animal {
   String name;
   int age;
   String gender;
+  static int count;
 
   Animal() {
 
